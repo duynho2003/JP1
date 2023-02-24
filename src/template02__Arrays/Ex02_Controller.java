@@ -39,7 +39,7 @@ public class Ex02_Controller {
                 }
             }
             if (cnt == 0) {
-                System.out.println("Not found!");
+                System.err.println("Not found!");
             }
         }
     }
@@ -49,7 +49,8 @@ public class Ex02_Controller {
 //        for (int i = 0; i < model.length; i++) {
         if (next == 0) {
             System.err.println("Nothing to display");
-        } else {
+        } 
+        else {
             for (int i = 0; i < next; i++) {
                 System.out.println(model[i]);
             }
