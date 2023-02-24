@@ -9,7 +9,7 @@ public class Ex03_View {
         Ex02_Controller ex = new Ex02_Controller();
         //1. Khoi tao Scanner
         Scanner sc = new Scanner(System.in);
-
+        //Ex02_Controller ex = new Ex02_Controller();
         //2. In ra giao dien menu
         System.out.println("*************************");
         System.out.println("\t+1. Add");

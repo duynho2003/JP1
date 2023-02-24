@@ -1,4 +1,5 @@
-package template02__Arrays;
+package template03_InputMethod;
+
 import java.util.Scanner;
 
 public class Ex03_View {
@@ -9,7 +10,7 @@ public class Ex03_View {
         Ex02_Controller ex = new Ex02_Controller();
         //1. Khoi tao Scanner
         Scanner sc = new Scanner(System.in);
-
+        //Ex02_Controller ex = new Ex02_Controller();
         //2. In ra giao dien menu
         System.out.println("*************************");
         System.out.println("\t+1. Add");
@@ -18,7 +19,7 @@ public class Ex03_View {
         System.out.println("\t+4. Exit");
         System.out.println("*************************");
 
-        //3. Chp nguoi dung nhap chon lua
+        //3. Cho nguoi dung nhap chon lua
         do {
             System.out.println("Enter your choice [1-4]: ");
             option = sc.nextInt();

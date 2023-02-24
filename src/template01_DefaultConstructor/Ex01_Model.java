@@ -14,7 +14,7 @@ public class Ex01_Model {
     String code, name;
     Scanner sc = new Scanner(System.in);
     
-    //2. Input data by Default Constructor
+    //2. Input data by Default Constructor (Loại 1)
     public Ex01_Model(){
         System.out.println("Enter code: ");
         code = sc.nextLine();

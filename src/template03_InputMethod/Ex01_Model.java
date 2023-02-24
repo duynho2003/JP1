@@ -1,4 +1,5 @@
-package template02__Arrays;
+package template03_InputMethod;
+
 /*
 Constructor:
     1. Trung ten Class
@@ -6,27 +7,30 @@ Constructor:
 Default Constructor
     1. Ham dung mac dinh
     2. Khong co tham so
-*/
+ */
 import java.util.Scanner;
 
 public class Ex01_Model {
+
     //1. Properties
     String code, name;
     Scanner sc = new Scanner(System.in);
-    
-    //2. Input data by Default Constructor
-    public Ex01_Model(){
+
+    //2. Input data by Input Method (Loại 2)
+    //public Ex01_Model(){
+    public void input() {
         System.out.println("Enter code: ");
         code = sc.nextLine();
         System.out.println("Enter name: ");
         name = sc.nextLine();
     }
-    
+
     //3. Format data
-    @Override
-    public String toString(){
+//    @Override
+//    public String toString(){
+    //Output data by output method (Loại 2b)
+    public String output() {
         String s = String.format("%s - %s ", code, name);
         return s;
     }
-    
 }
