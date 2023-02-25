@@ -7,10 +7,10 @@ public class Ex03_View {
     public void menu() {
         int option;
         String s;
-        Ex02_Controller ex = new Ex02_Controller();
         //1. Khoi tao Scanner
         Scanner sc = new Scanner(System.in);
-        //Ex02_Controller ex = new Ex02_Controller();
+        Ex02_Controller ex = new Ex02_Controller();
+        
         //2. In ra giao dien menu
         System.out.println("*************************");
         System.out.println("\t+1. Add");
@@ -22,7 +22,7 @@ public class Ex03_View {
         //3. Cho nguoi dung nhap chon lua
         do {
             System.out.println("Enter your choice [1-4]: ");
-            option = sc.nextInt();
+            option = Integer.parseInt(sc.nextLine());
 
             switch (option) {
                 case 1:
@@ -47,7 +47,7 @@ public class Ex03_View {
             }
             //4. Continue?
             System.out.println("Continue (Y/N)?");
-            s = sc.next();
+            s = sc.nextLine();
             if (!s.equalsIgnoreCase("y")) {
                 break;
             }
