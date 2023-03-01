@@ -1,18 +1,9 @@
-package template03_InputMethod;
-/*
-Constructor:
-    1. Trung ten Class
-    2. Khong dung kieu tra ve
-Default Constructor
-    1. Ham dung mac dinh
-    2. Khong co tham so
-*/
-
+package session08_InterfaceNestedClass;
 import java.util.Scanner;
 
-public class Ex01_Model {
+public class DoiTuong extends Cha{
     //1. Properties
-    String code, name;
+    String name;
     Scanner sc = new Scanner(System.in);
     
     //2. Input data by Input Method (Loai 2a)
@@ -29,6 +20,7 @@ public class Ex01_Model {
     //public String toString(){
     
     //OUTPUT DATA BY OUTPUT METHOD [LOAI 2b]
+    @Override
     public String output(){    
     String s = String.format("Code: %s - Name: %s ", code, name);
         return s;
