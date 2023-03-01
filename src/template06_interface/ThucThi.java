@@ -1,5 +1,6 @@
-package session08_InterfaceNestedClass;
+package template06_interface;
 
+import session08_InterfaceNestedClass.*;
 import java.util.Scanner;
 public class ThucThi {
         public void menu() {

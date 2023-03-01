@@ -1,4 +1,5 @@
-package session08_InterfaceNestedClass;
+package template06_interface;
+import session08_InterfaceNestedClass.*;
 import java.util.Scanner;
 
 public class QuanLy {
@@ -18,7 +19,7 @@ public class QuanLy {
             System.err.println("Cannot add more model!");
         } else {
             model[next] = new DoiTuong();
-            model [next].input();
+            model[next].input();
             next++;
         }
     }
