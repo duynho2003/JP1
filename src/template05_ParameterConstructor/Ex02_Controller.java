@@ -18,8 +18,8 @@ public class Ex02_Controller {
         if (next >= max) {
             System.err.println("Cannot add more model!");
         } else {
-//            model[next] = Ex01_Model();
-//            model[next].input();
+            model[next] = new Ex01_Model();
+            model [next].input();
             next++;
         }
     }
