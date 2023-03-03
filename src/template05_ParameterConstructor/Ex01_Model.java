@@ -10,12 +10,7 @@ public class Ex01_Model {
     public Ex01_Model(String code, String name){
         this.code = code;
         this.name = name;
-    }
-
-    Ex01_Model() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
+    }    
     //2. Input data by Input Method (Loai 2a)
     //public Ex01_Model(){
 //    public void input(){
@@ -34,9 +29,4 @@ public class Ex01_Model {
     String s = String.format("%s - %s ", code, name);
         return s;
     }
-
-    void input() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
 }

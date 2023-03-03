@@ -13,30 +13,32 @@ public class Ex02_Controller {
         max = Integer.parseInt(sc.nextLine());
         model = new Ex01_Model[max];
     }
-
     public void addNew() {
         if (next >= max) {
             System.err.println("Cannot add more model!");
         } else {
-            model[next] = new Ex01_Model();
-            model [next].input();
+            String x, y;
+            System.out.println("Enter code: ");
+            x = sc.nextLine();
+            System.out.println("Enter name: ");
+            y = sc.nextLine();
+            model[next] = new Ex01_Model(x, y);
             next++;
         }
     }
-
     public void search() {
         //System.out.println("This is Search()");
         if(next == 0){
                 System.err.println("Nothing To Display!");
             }
             else {
-            String code;
+            String x;
             int cnt = 0;
             System.out.println("Enter Code: ");
-            code = sc.nextLine();
+            x = sc.nextLine();
                 
             for(int i = 0; i < next; i++){
-            if(code.equalsIgnoreCase( model[i].code)){
+            if(x.equalsIgnoreCase( model[i].code)){
                 cnt++;    
                 System.out.println(model[i]);
                     
