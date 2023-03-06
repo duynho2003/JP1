@@ -1,0 +1,4 @@
+session08_InterfaceNestedClass.OuterClass
+session08_InterfaceNestedClass.OuterClass$Ex04_InnerClass
+session08_InterfaceNestedClass.Ex04_InnerClass
+session08_InterfaceNestedClass.OuterClass$Inner

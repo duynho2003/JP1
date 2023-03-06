@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ByciclesStore {
 
-    public void menu() {
+    public void menu() throws BycicleException {
         int option;
         String s;
         //1. Khoi tao Scanner
@@ -20,7 +20,7 @@ public class ByciclesStore {
 
         //3. Cho nguoi dung nhap chon lua
         do {
-            System.out.println("Enter your choice [1-4]: ");
+            System.out.println("Enter your choice [1-3]: ");
             option = Integer.parseInt(sc.nextLine());
 
             switch (option) {
@@ -47,10 +47,10 @@ public class ByciclesStore {
                 break;
             }
 
-        } while (option != 4);
+        } while (option != 3);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws BycicleException{
         new ByciclesStore().menu();
     }
 }

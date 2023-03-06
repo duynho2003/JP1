@@ -1,0 +1,5 @@
+session08_InterfaceNestedClass.AnonymousDemo$1
+session08_InterfaceNestedClass.Ex06_Anonymous
+session08_InterfaceNestedClass.Polygon
+session08_InterfaceNestedClass.AnonymousDemo
+session08_InterfaceNestedClass.AnonymousDemo$Ex06_Anonymous

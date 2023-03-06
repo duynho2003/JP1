@@ -1,0 +1,4 @@
+session08_InterfaceNestedClass.Ex03_StaticNestedClass
+session08_InterfaceNestedClass.Outer
+session08_InterfaceNestedClass.StaticNested
+session08_InterfaceNestedClass.Outer$StaticNested

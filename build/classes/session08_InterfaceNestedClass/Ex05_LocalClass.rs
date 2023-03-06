@@ -1,0 +1,4 @@
+session08_InterfaceNestedClass.Outer02$Ex05_LocalClass
+session08_InterfaceNestedClass.Outer02
+session08_InterfaceNestedClass.Outer02$1Inner
+session08_InterfaceNestedClass.Ex05_LocalClass
