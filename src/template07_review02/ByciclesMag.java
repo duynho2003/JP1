@@ -10,10 +10,19 @@ public class ByciclesMag {
     public ByciclesMag() {
         sc = new Scanner(System.in);
         do{
+//            System.out.println("Enter number of bikes to management: ");
+//            max = Integer.parseInt(sc.nextLine());
+//            if(max <= 1 || max >= 100){
+//                System.err.println("Number must be in rank [2 - 99]");
+//            }
+        try{
             System.out.println("Enter number of bikes to management: ");
             max = Integer.parseInt(sc.nextLine());
             if(max <= 1 || max >= 100){
-                System.err.println("Number must be in rank [2 - 99]");
+                throw new BycicleException("Number must be in rank [2 - 99]");
+            }
+        }catch(BycicleException e){
+            System.out.println(e.getMessage());
             }
         }while(max <= 1 || max >= 100);
 //        max = 2;  //Voi bai yeu cau nguoi dung nhap gia tri, sv can phat trien them
@@ -29,14 +38,23 @@ public class ByciclesMag {
         int size; */
         //1. Khai bao Bycicles va cac attribute cua no
         //Bycicles bike; => sai
-        String x, y;
-        int z;
+        String x = null, y = null;
+        int z = 0;
         //---------------------//
         do{
-            System.out.println("Enter Bycicles model: ");
-            x = sc.nextLine();
-            if(x.isEmpty()){
-                System.err.println("Model can not left blank!");
+//            System.out.println("Enter Bycicles model: ");
+//            x = sc.nextLine();
+//            if(x.isEmpty()){
+//                System.err.println("Model can not left blank!");
+//            }
+            try{
+                System.out.println("Enter Bycicles model: ");
+                x = sc.nextLine();
+                if(x.isEmpty()){
+                throw new BycicleException("Model can not left blank!");
+            }
+        }catch(BycicleException e){
+            System.out.println(e.getMessage());
             }
         }while(x.isEmpty());
         //-------------

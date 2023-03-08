@@ -27,6 +27,5 @@ public class Ex01_Model {
     public String toString(){
         String s = String.format("%s - %s ", code, name);
         return s;
-    }
-    
+    }   
 }
