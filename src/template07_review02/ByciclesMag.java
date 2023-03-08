@@ -19,7 +19,6 @@ public class ByciclesMag {
 //        max = 2;  //Voi bai yeu cau nguoi dung nhap gia tri, sv can phat trien them
         next = 0;
         bike = new Bycicles[max];
-        
     }
     
     public void addBike() throws BycicleException{

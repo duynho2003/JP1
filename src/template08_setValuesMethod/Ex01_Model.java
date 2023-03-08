@@ -1,4 +1,4 @@
-package template05_ParameterConstructor;
+package template08_setValuesMethod;
 import java.util.Scanner;
 
 public class Ex01_Model {
@@ -9,8 +9,9 @@ public class Ex01_Model {
     public String getCode(){
         return code;
     }
-    //Parameter Constructor (Loai 3)
-    public Ex01_Model(String code, String name){
+    
+    //setValues method (Loai 4)
+    public void setValues(String code, String name){
         this.code = code;
         this.name = name;
     }    
