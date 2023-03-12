@@ -64,7 +64,7 @@ public class ByciclesMag {
             if(y.isEmpty()){
                 System.err.println("Type can not left blank!");
             }
-        }while(x.isEmpty());
+        }while(y.isEmpty());
         //-------------
         do{
            System.out.println("Enter Bycicles size: ");
