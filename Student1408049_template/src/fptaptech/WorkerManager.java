@@ -1,5 +1,6 @@
-package review03_Student1408049;
+package fptaptech;
 
+import academy.Worker;
 import java.util.Scanner;
 
 public class WorkerManager {
@@ -50,14 +51,14 @@ public class WorkerManager {
 
     public void saveWorker(Worker worker) {
         String name = null, address = null;
-        int year_of_birth = 0, id;
+        int year_of_birth = 0, ID;
         if (nextWorker >= maxWorker) {
             System.err.println("Cannot add more than " + maxWorker + " workers");
             return;
         }
 
         System.out.println("Enter worker id: ");
-        id = Integer.parseInt(sc.nextLine());
+        ID = Integer.parseInt(sc.nextLine());
         do {
             try {
                 System.out.print("Enter worker name: ");
@@ -94,12 +95,12 @@ public class WorkerManager {
             }
         } while (year_of_birth <= 1965 || year_of_birth >= 2005);
 
-        arr[nextWorker] = new Worker(id, name, address, year_of_birth);
+        arr[nextWorker] = new Worker(ID, name, address, year_of_birth);
         nextWorker++;
     }
 
     public void showAll() {
-        System.out.println("showall");
+        System.out.println("Worker list:");
         if (nextWorker == 0) {
             System.err.println("Nothing to display!");
         }

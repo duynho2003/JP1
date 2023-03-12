@@ -1,4 +1,4 @@
-package review03_Student1408049;
+package academy;
 
 public class Worker {
 
